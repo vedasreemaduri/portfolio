@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101410">
+  <meta name="description" content="Portfolio of Vedasree Maduri, a Computer Science (AI & ML) undergraduate interested in machine learning, deep learning, NLP, and software development.">
+  <title>Vedasree Maduri | AI &amp; ML Portfolio</title>
+  <style>
+    :root{--bg:#101410;--panel:#171d18;--panel2:#1d261f;--ink:#f0f4ec;--muted:#b1bcb0;--lime:#c3ef70;--line:#303b31;--warm:#f3a77b;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid var(--lime);outline-offset:4px} .wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    header{height:78px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.08)}.nav{display:flex;align-items:center;justify-content:space-between}.brand{font-weight:750;letter-spacing:-.04em;font-size:1.1rem;text-decoration:none}.brand span{color:var(--lime)}nav{display:flex;gap:28px;align-items:center}nav a{font-size:.9rem;color:var(--muted);text-decoration:none}nav a:hover{color:var(--lime)}.nav-contact{border:1px solid #52634b;border-radius:99px;padding:9px 16px;color:var(--ink)}
+    .hero{padding:100px 0 86px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:470px;height:470px;border:1px solid rgba(195,239,112,.15);border-radius:50%;right:-105px;top:15px;box-shadow:0 0 0 48px rgba(195,239,112,.025),0 0 0 96px rgba(195,239,112,.02);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.5fr .75fr;gap:70px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--lime);font-size:.78rem;text-transform:uppercase;letter-spacing:.17em;font-weight:700}.eyebrow:before{content:"";height:1px;width:27px;background:var(--lime)}h1{font-size:clamp(3.2rem,7vw,6.2rem);letter-spacing:-.075em;line-height:.98;margin:24px 0 24px;max-width:800px}h1 em{font-style:normal;color:var(--lime)}.intro{font-size:1.11rem;max-width:640px;color:var(--muted);line-height:1.8}.hero-actions{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;gap:10px;padding:13px 19px;border-radius:7px;text-decoration:none;font-weight:700;font-size:.92rem}.button.primary{background:var(--lime);color:#17200f}.button.secondary{border:1px solid #485449;color:var(--ink)}.button:hover{transform:translateY(-2px)}.profile-card{background:linear-gradient(145deg,#202b20,#151a15);border:1px solid #354234;padding:26px;border-radius:14px;box-shadow:0 20px 60px #0003}.profile-top{display:flex;align-items:center;gap:16px}.monogram{height:72px;width:72px;display:block;flex:0 0 72px;object-fit:cover;object-position:center 35%;border:2px solid var(--lime);border-radius:50%;box-shadow:0 0 0 5px rgba(195,239,112,.1)}.profile-card h2{font-size:1.05rem;margin:0}.profile-card .sub{color:var(--muted);font-size:.82rem}.profile-rule{height:1px;background:var(--line);margin:24px 0}.profile-meta{display:grid;gap:15px}.meta-label{display:block;text-transform:uppercase;color:#829080;font-size:.68rem;letter-spacing:.13em;font-weight:700}.meta-value{font-size:.91rem;color:#e7ede4}.status{display:inline-flex;align-items:center;gap:8px;color:var(--lime);font-size:.83rem}.status:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime)}
+    .ticker{border-block:1px solid var(--line);background:#141a14;padding:17px 0}.ticker-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#bec9b8;font-size:.81rem;letter-spacing:.08em;text-transform:uppercase}.ticker b{color:var(--lime);font-weight:650}
+    section{padding:92px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}.kicker{font-size:.76rem;color:var(--lime);letter-spacing:.17em;text-transform:uppercase;font-weight:700}h2.section-title{margin:8px 0 0;font-size:clamp(2rem,4vw,3.15rem);letter-spacing:-.06em;line-height:1.08}.section-note{max-width:350px;color:var(--muted);font-size:.94rem}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:370px;display:flex;flex-direction:column;padding:25px;border-radius:12px;background:var(--panel);border:1px solid var(--line);transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-5px);border-color:#687b5a}.project-index{display:flex;justify-content:space-between;color:#849080;font-size:.77rem;letter-spacing:.08em}.project-mark{height:46px;width:46px;margin:26px 0 20px;border:1px solid #546348;border-radius:12px;display:grid;place-items:center;color:var(--lime);font-size:1.2rem}.project h3{font-size:1.3rem;letter-spacing:-.035em;line-height:1.25;margin:0 0 12px}.project p{color:var(--muted);font-size:.9rem;margin:0 0 20px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}.tag{font-size:.7rem;color:#d4decf;background:#242e25;border:1px solid #354334;padding:5px 9px;border-radius:99px}
+    .about{background:#141a15;border-block:1px solid rgba(255,255,255,.06)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about-copy p{color:var(--muted);font-size:1rem;line-height:1.85}.about-copy p:first-of-type{color:#e0e8db;font-size:1.12rem}.skills{display:grid;gap:20px}.skill-group{padding-bottom:17px;border-bottom:1px solid var(--line)}.skill-group h3{margin:0 0 10px;font-size:.83rem;color:var(--lime);letter-spacing:.1em;text-transform:uppercase}.skill-group p{margin:0;color:#d7dfd4;font-size:.93rem}
+    .education-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.edu-card,.lead-card{padding:27px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.edu-top{display:flex;justify-content:space-between;gap:20px;align-items:start}.edu-card h3,.lead-card h3{margin:0;font-size:1.25rem;letter-spacing:-.03em}.date{color:var(--lime);white-space:nowrap;font-size:.84rem}.edu-card p,.lead-card p{color:var(--muted);margin:9px 0 0}.edu-detail{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.edu-detail span{background:#252f24;padding:7px 11px;border-radius:6px;font-size:.8rem;color:#d9e2d3}.lead-card{background:linear-gradient(135deg,#1e291e,#171d18)}.lead-card p{line-height:1.8}
+    .contact{padding:90px 0 100px}.contact-box{display:flex;justify-content:space-between;gap:35px;align-items:center;border:1px solid #465542;border-radius:16px;padding:45px;background:radial-gradient(ellipse at 85% 30%,#34412b 0,transparent 42%),#171d18}.contact-box h2{font-size:clamp(2rem,4vw,3.6rem);letter-spacing:-.065em;line-height:1.05;margin:9px 0 12px}.contact-box p{color:var(--muted);margin:0}.contact-links{display:flex;gap:12px;flex-wrap:wrap}.contact-links .button{white-space:nowrap}footer{padding:20px 0 30px;color:#849080;font-size:.78rem;border-top:1px solid rgba(255,255,255,.07)}.footer-row{display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:36px}.hero:after{right:-270px;top:40px}.profile-card{max-width:520px}.projects{grid-template-columns:1fr 1fr}.project:last-child{grid-column:span 2;min-height:300px}.about-grid{gap:38px}.education-grid{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}}
+    @media(max-width:600px){.wrap{width:min(var(--max),calc(100% - 34px))}header{height:68px}nav{gap:13px}nav a{font-size:.78rem}nav a:nth-child(2),nav a:nth-child(3){display:none}.nav-contact{padding:7px 12px}.hero{padding:75px 0 62px}.hero-grid{gap:30px}h1{font-size:3.35rem}.intro{font-size:1rem}.ticker-inner{justify-content:flex-start;gap:12px 22px}.ticker-inner span{font-size:.72rem}section{padding:69px 0}.section-head{display:block}.section-note{margin-top:14px}.projects{grid-template-columns:1fr}.project,.project:last-child{grid-column:auto;min-height:330px}.about-grid{grid-template-columns:1fr;gap:30px}.edu-top{display:block}.date{display:block;margin-top:8px}.contact-box{padding:29px 23px}.contact-links{display:grid;width:100%}.contact-links .button{justify-content:center}.footer-row{display:block}.footer-row span{display:block;margin-top:6px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Vedasree Maduri home">VM<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a><a href="#about">About</a><a href="#education">Education</a><a class="nav-contact" href="#contact">Get in touch ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Computer Science · AI &amp; ML</div>
+          <h1>Curious by nature.<br><em>Building with intelligence.</em></h1>
+          <p class="intro">I’m Vedasree Maduri, a Computer Science undergraduate exploring machine learning, deep learning, and thoughtful software. I enjoy turning technical ideas into practical projects, from text analysis to image colorization.</p>
+          <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="button secondary" href="mailto:vedasree1210@gmail.com">Email me <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <aside class="profile-card" aria-label="Profile details">
+          <div class="profile-top"><img class="monogram" src="vedasree-maduri-portrait.jpg" alt="Portrait of Vedasree Maduri" width="72" height="72"><div><h2>Vedasree Maduri</h2><div class="sub">AI &amp; ML Undergraduate</div></div></div>
+          <div class="profile-rule"></div>
+          <div class="profile-meta">
+            <div><span class="meta-label">Currently</span><span class="meta-value">B.Tech, SR University</span></div>
+            <div><span class="meta-label">Based in</span><span class="meta-value">Warangal, Telangana, India</span></div>
+            <div><span class="meta-label">Focus</span><span class="meta-value">Machine learning · NLP · Software</span></div>
+          </div>
+          <div class="profile-rule"></div><div class="status">Open to learning and collaboration</div>
+        </aside>
+      </div>
+    </section>
+    <div class="ticker"><div class="wrap ticker-inner"><span><b>01</b> Machine learning</span><span><b>02</b> Deep learning</span><span><b>03</b> NLP</span><span><b>04</b> Software development</span></div></div>
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">Selected work</div><h2 class="section-title">Projects built to learn<br>by doing.</h2></div><p class="section-note">Academic and personal explorations across language, time-series forecasting, and computer vision.</p></div>
+        <div class="projects">
+          <article class="project"><div class="project-index"><span>PROJECT 01</span><span>TEXT · NLP</span></div><div class="project-mark" aria-hidden="true">Aa</div><h3>AI Text Analyzer</h3><p>A Python-based tool that computes word frequency, character count, and other basic text insights, presented through a clean interface.</p><div class="tags"><span class="tag">Python</span><span class="tag">NLP basics</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></article>
+          <article class="project"><div class="project-index"><span>PROJECT 02</span><span>TIME SERIES · LSTM</span></div><div class="project-mark" aria-hidden="true">⌁</div><h3>Bitcoin Price Prediction</h3><p>A time-series forecasting project using LSTM networks to study historical cryptocurrency data, with preprocessing and visualization to support interpretation.</p><div class="tags"><span class="tag">Python</span><span class="tag">LSTM</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div></article>
+          <article class="project"><div class="project-index"><span>PROJECT 03</span><span>COMPUTER VISION · GENERATIVE AI</span></div><div class="project-mark" aria-hidden="true">◉</div><h3>Image Colorization with CNN &amp; GANs</h3><p>A deep learning model exploring how CNN and GAN architectures can transform grayscale images into color, refined through iterative experimentation.</p><div class="tags"><span class="tag">Python</span><span class="tag">CNN</span><span class="tag">GANs</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Google Colab</span></div></article>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="wrap about-grid">
+        <div class="about-copy"><div class="kicker">A little about me</div><h2 class="section-title">Learning the ideas.<br>Making them useful.</h2><p>I’m pursuing a Bachelor of Technology in Computer Science with a specialization in Artificial Intelligence and Machine Learning at SR University.</p><p>My project work has introduced me to data preprocessing, model evaluation, and practical experimentation with Python. I’m especially interested in machine learning, generative AI, natural language processing, and software development.</p></div>
+        <div class="skills" aria-label="Technical skills">
+          <div class="skill-group"><h3>Programming</h3><p>Python · Java · SQL</p></div>
+          <div class="skill-group"><h3>Computer science</h3><p>Object-oriented programming · Data structures fundamentals · Problem solving</p></div>
+          <div class="skill-group"><h3>AI &amp; machine learning</h3><p>Machine learning fundamentals · Data preprocessing · Model evaluation · CNN · LSTM · GAN fundamentals</p></div>
+          <div class="skill-group"><h3>Libraries &amp; tools</h3><p>NumPy · Pandas · Matplotlib · GitHub · Google Colab · VS Code</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">Education &amp; leadership</div><h2 class="section-title">Growing through<br>study and community.</h2></div></div>
+        <div class="education-grid">
+          <article class="edu-card"><div class="edu-top"><div><h3>Bachelor of Technology</h3><p>Computer Science · Artificial Intelligence &amp; Machine Learning<br>SR University · Warangal, Telangana</p></div><span class="date">Aug 2023 – Aug 2027</span></div><div class="edu-detail"><span>GPA: 8.0 (to date)</span><span>Undergraduate</span></div></article>
+          <article class="lead-card"><div class="kicker">Community</div><h3 style="margin-top:10px">Vice-Chair, AIML Club</h3><p>Helped lead AI and machine learning initiatives and mentored peers. Also built multiple AI and web-based projects, with a focus on problem solving and team collaboration.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="wrap contact-box"><div><div class="kicker">Let’s connect</div><h2>Have an idea in mind?</h2><p>I’d be glad to connect about AI, software, or a chance to learn together.</p></div><div class="contact-links"><a class="button primary" href="mailto:vedasree1210@gmail.com">vedasree1210@gmail.com ↗</a><a class="button secondary" href="https://www.linkedin.com/in/vedasree-maduri/" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a><a class="button secondary" href="https://github.com/vedasreemaduri" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div></div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-row"><span>© 2026 Vedasree Maduri</span><span>Made with curiosity · Warangal, India</span></div></footer>
+</body>
+</html>
+
+
+
